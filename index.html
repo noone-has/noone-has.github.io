@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>++
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
@@ -7,62 +7,87 @@
         <title>Portfolio</title>
     </head>
     <body>
-        <img src="https://www.hanze.nl/binaries/_cb_1715930695464/content/assets/hanze/nl/over-hanze/logo/hanzelogo-beeldscherm-rgb/png/logo-hanze-oranje-zwart-rgb.png"
-        border="10">
-        <h1 class="foreground">Programming Portfolio</h1>
-        <h2>of Silvijn van Komen</h2>
+        <div class="background-box">
+            <img src="https://www.hanze.nl/binaries/_cb_1715930695464/content/assets/hanze/nl/over-hanze/logo/hanzelogo-beeldscherm-rgb/png/logo-hanze-oranje-zwart-rgb.png"
+            border="10">
 
-        <h3>About me</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum.
-        </p>
-        
-        <h3>Skills</h3>
-        <b>Nullam viverra sodales libero.</b> <br>
-        <i>Aenean convallis justo eu arcu porta,</i> <br> 
-        <u>sit amet lobortis augue dictum.</u><br>
-        <em> Phasellus sollicitudin luctus mauris,</em><br>
-        <strong>non finibus augue blandit in.</strong><br> 
-        <hr>
-        <a href="https://noonehas.itch.io" target="_blank">noonehas.itch.io</a>
-        Nulla eget odio in sapien tincidunt vestibulum 
-        sit amet eu dui. Nullam sit amet purus at justo placerat porta. 
-        Aenean sagittis odio vel velit feugiat commodo. Nullam pellentesque, 
-        lectus et vehicula porttitor, nulla lacus commodo libero, eget laoreet 
-        est erat a risus. Mauris ut vulputate mi. Vestibulum at placerat urna.
-        <ul>
-            <li>RSurvival</li>
-            <li>Borneo</li>
-            <li>Run Run Robot</li>
-        </ul>
-        
-        <table border="10" cellpadding="10" cellspacing="10">
-            <tr>
-                <th>Skill rating</th>
-                <th>3D art</th>
-                <th>Game Design</th>
-                <th colspan="2">UI/UX Design</th>
-                <th>Programming</th>
-            </tr>
-            <tr>
-                <td>-</td>
-                <td>4/10</td>
-                <td>5.5/10</td>
-                <td>5/10</td>
-                <td>7/10</td>
-                <td>8/10</td>
-            </tr>
-        </table>
+            <h1 class="foreground">Programming Portfolio</h1>
 
-        <div class="box">
+            <h2>of Silvijn van Komen</h2>
+
+            <h3>About me</h3>
+            <p>
+                My name is Silvijn and I am a game programmer with an interest in tools programming
+                I am currently studying Creative Media & Game Technologies at Hanze University in Groningen, Netherlands.
+            </p>
+
+
+            <h1>Projects</h1>
+
+            <h2>Borneo - School Project</h2>
+            <img src="Borneo-main.png" class="image-main">
+            <p>
+                This is a 3D adventure game made for my study. The game is made for the fictional Wildlands case. It is supposed to advertise the zoo to the players. 
+                The game tells the story of Jim and the player who crashland in the borneo jungle. 
+                The animals are presented as friendly and they help you collect parts of your crashlanded plane to get back.
+                Main gameplay is centered around minigames.
+            </p>
+
+            <h4>My role</h4>
+            I was the main programmer in charge of coding systems for the game. Along other things, I made a Dialogue/Cutscene system and all the Minigames.
+            <h4>Minigames</h4>
+            All of our Minigames contained Gyroscopic controls, meaning the games are controlled by physical movements of the phone. 
+            Because we were going to make multiple minigames (ended up being 3), I made a script called GyroControl, that could be used in Minigames by writing one line of code. 
+            This made implementing controls for new Minigames way easier because I was essentially reusing code.
+            <div class="horizontal-images">
+                <img src="Borneo-MG1.jpg" class="image-secondary"> <img src="Borneo-MG2.jpg" class="image-secondary"> <img src="Borneo-MG3.jpg" class="image-secondary">
+            </div>
+            <a href="script-files/GyroControl.cs" target="_blank">Download GyroControl.cs</a>
             
+            <h4>Dialogue</h4>
+            To tell the story of the game, we needed a system that displays dialogue and animates cutscenes. It needed to have support for localization, because the game had 3 languages.
+            I made a script that does both of these.
+            It reads dialogue directly from localization tables, so its easy to import dialogue lines.
+            The cutscene logic can be configured entirely from the Inspector in the Unity Editor and supports camera transitions and animation triggers for every dialogue line.
+            It also has a UnityEvent as a bonus so you can hook up any custom logic you want.
+            <div class="horizontal-images">
+                <img src="Borneo-dia1.jpg" class="image-secondary"> <img src="Borneo-dia2.jpg" class="image-secondary">
+            </div>
+            <a href="script-files/DialogueShower.cs" target="_blank">Download DialogueShower.cs</a>
+            <a href="script-files/CameraManager.cs" target="_blank">Download CameraManager.cs</a>
+            
+            <h2>RSurvival - Passion Project</h2>
+            <p>
+                <a href="https://noonehas.itch.io" target="_blank">noonehas.itch.io</a>
+            </p>
+            <h2>Run Run Robot - School Project</h2>
+            <p>
+
+            </p>
+            <h2>This website</h2>
+            <p>
+                Making this website is my first time using HTML/CSS, and i've really enjoyed it so far.
+            </p>
         </div>
     </body>
 </html>
 
+<!--
+<table border="10" cellpadding="10" cellspacing="10">
+    <tr>
+        <th>Skill rating</th>
+        <th>3D art</th>
+        <th>Game Design</th>
+        <th colspan="2">UI/UX Design</th>
+        <th>Programming</th>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>4/10</td>
+        <td>5.5/10</td>
+        <td>5/10</td>
+        <td>7/10</td>
+        <td>8/10</td>
+    </tr>
+</table>
+-->

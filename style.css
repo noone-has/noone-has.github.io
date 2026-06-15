@@ -1,17 +1,64 @@
 .foreground {
     color:green;
-    align-self: center;
 }
 
-.box{
-    height: 100px;
-    width: 100px;
-    padding: 20px;
-    margin: 50px;
-    border: 10px solid green;
-    background-color: grey
+.background-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+    margin: 0px;
+    background-color: rgb(38, 38, 38);
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+.horizontal-images{
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
 }
 
 body{
-    color:gray
+    color:white
+}
+
+img{
+    border:1px;
+}
+
+.image-main{
+    border: 5px;
+    width: 60%;
+    height: 60%;
+}
+
+.image-secondary{
+    border: 5px;
+    width: 35%;
+    height: 35%;
+}
+
+html {
+    background-color: black;
+}
+
+h1{
+    margin:0;
+}
+
+h4{
+    padding: 0;
+    margin: 4px;
+}
+
+h3{
+    margin: 3px;
 }
