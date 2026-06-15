@@ -59,15 +59,29 @@
             
             <h2>RSurvival - Passion Project</h2>
             <img src="RSurvival/RSurvival-main.png" class="image-main">
-            <h4>Itch.io page can be found <a href="https://noonehas.itch.io" target="_blank">here</a></h4>
-            <h4>Source code can be found <a href="https://codeberg.org/noonehas/RSurvival" target="_blank">here</a></h4>
+            <h3>Itch.io page can be found <a href="https://noonehas.itch.io" target="_blank">here</a></h4>
+            <h3>Source code can be found <a href="https://codeberg.org/noonehas/RSurvival" target="_blank">here</a></h4>
             <h4>My Role</h4>
-            I am the only developer of the project. As of writing a friend who was in the Borneo team has showed interest in the project so you might see some commits from him on the github :)
+            I am the only developer of the project. Though at the time of writing this, a friend who was in the Borneo team has showed interest in the project so you might see some commits from him on the github :)
             <h4>Procedural Terrain Generation</h4>
-
+            <img src="RSurvival/RSurvival-world.png" class="image-secondary">
+            The terrain in the game is completely Procedurally generated at runtime. The height is based off of Multi-layered Perlin Noise. 
+            There are different Biomes with differing terrain generation, terrain colors and props (trees/rocks) that can spawn.
+            <h4>Level of detail meshes</h4>
+            <img src="RSurvival/RSurvival-lod.png" class="image-secondary">
+            The meshes get generated at different detail levels depending on the distance from the player.
+            This increases rendering performance and reduces the time it takes to generating meshes.
+            <h4>Single-responsibility principle</h4>
+            <p>
+                The code for the terrain generation adheres to the single responsibility design principle.
+                This principle states that each class/script should serve only one function, 
+                this function usually being hinted at with the name of the script/class.
+                As of now the scripts related to generation the world are: Biome.cs, BiomeManager.cs, ColorMapper.cs, PropGenerator.cs, TerrainGenerator.cs, TextureGenerator.cs and WorldManager.cs 
+                and can be viewed <a href="https://codeberg.org/noonehas/RSurvival/src/branch/main/Assets/Scripts/World" target="_blank"> here</a>
+            </p>
             <h2>Run Run Robot - School Project</h2>
             <p>
-
+                
             </p>
             <h2>This website</h2>
             <p>
