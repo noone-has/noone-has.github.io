@@ -15,10 +15,11 @@
 
             <h3>About me</h3>
             <p>
-                My name is Silvijn and I am a game programmer with an interest in tools programming
+                My name is Silvijn and I am a game programmer with an interest in tools programming. 
+                I started programming out of boredom during the covid lockdown in 2020, and kept the interest ever since.
+                In 2022 I picked up Unity and loved the feeling making code feel alive in the form of a game.
                 I am currently studying Creative Media & Game Technologies at Hanze University in Groningen, Netherlands.
             </p>
-
 
             <h1>Projects</h1>
 
@@ -67,9 +68,11 @@
             The terrain in the game is completely Procedurally generated at runtime. The height is based off of Multi-layered Perlin Noise. 
             There are different Biomes with differing terrain generation, terrain colors and props (trees/rocks) that can spawn.
             <h4>Level of detail meshes</h4>
-            <img src="RSurvival/RSurvival-lod.png" class="image-secondary">
+            <img src="RSurvival/RSurvival_ChunkLoading.gif" class="image-secondary">
             The meshes get generated at different detail levels depending on the distance from the player.
             This increases rendering performance and reduces the time it takes to generating meshes.
+            <h4>Multithreading</h4>
+            All generation of terrain is done on a seperate thread. This means other parts of the game logic don't have to wait on the intensive process of generating terrain, increasing performance.
             <h4>Single-responsibility principle</h4>
             <p>
                 The code for the terrain generation adheres to the single responsibility design principle.
@@ -90,13 +93,15 @@
             <div class="horizontal-images">
                 <img src="Run_Run_Robot/RRR_DialogueStruct.png" class="image-secondary"> <img src="Run_Run_Robot/RRR_DialogueParent.png" class="image-secondary"> <img src="Run_Run_Robot/RRR_DialogueImplementation.png" class="image-secondary">
             </div>
-            <img src="Run_Run_Robot/RRR_DialogueInAction.png" class="image-main">
+            <img src="Run_Run_Robot/RRR_DialogueGif.gif" class="image-main">
             No downloads because all code is in-editor with GameMaker.
             <h2>This very website</h2>
             
             Making this website has been my first time using HTML/CSS, and i've really enjoyed it so far.
 
             <p>Source code available <a href="https://github.com/noone-has/noone-has.github.io" target="_blank">here</a></p>
+
+            <img src="giphy.gif">
         </div>
     </body>
 </html>
